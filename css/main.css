@@ -1,0 +1,752 @@
+
+
+.pagina{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, auto);
+    max-width: 100%;
+ 
+}
+/*CONTENIDO PRINCIPAL */
+.container {
+display: grid;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 80px 586px;
+background-image: url(../img/Fondo1.jpg);
+max-width: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.toggle{
+    width: 85%;   
+    padding-top: 35px;
+    text-align: right;
+    font-size: 42px;
+    color:#ded6bf;
+    z-index: 2;
+}
+
+.toggle ul{
+list-style: none;
+
+}
+.toggle li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+   display: none;
+ }
+
+
+.toggle i {
+    width: 60px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #d2393c;
+    
+}
+
+.textos {
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    z-index: 0;
+
+}
+
+.h1textos{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    line-height: 1.3;
+    color: white;
+    font-weight: 800;
+}
+
+hr{
+    width: 15%;
+    height: 2px;
+    background-color:white;
+    border-color:white;
+}
+
+.textos p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    background-size: cover;
+    max-width: 520px;
+    }
+.logo {
+
+    background-image:url(../img/Logo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 23px 0 0 15px; 
+    justify-items: stretch;
+}
+
+.navegation ul {
+    list-style: none;
+}
+
+
+.navegation{
+    display: none;
+}
+
+.navegation li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 40px 15px 0 0px; 
+    
+}
+
+@media screen and (min-width:998px){
+    .navegation {
+        display: block;
+    }
+    .toggle{
+        display: none;
+    }
+
+        }
+
+
+
+.navegation li a:hover{
+    border-bottom: 5px dotted;
+    padding-bottom: 10px;
+    transition: .4s;
+}
+
+
+
+
+
+/* LAS DOS CAJAS */
+
+
+/* PRIMERA CAJA COLOR ROJO */
+   .caja1{
+       display: grid;
+      grid-template-columns: 100%;
+       grid-template-rows: 405px;
+       background: #d2393c;
+       width: 100%;  
+     align-items: center;
+     justify-items: center;
+        }
+
+     
+        .textcaja1{
+            width: 95%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+   .textcaja1 h2{
+    font-size: 28px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: rgb(222, 214, 191);
+    text-align: center;
+  }
+  .textcaja1 p{
+        font-size: 16px;
+        font-family: "Open Sans";
+        color: rgb(222, 214, 191);
+        text-align: center;
+        max-width: 450px;
+        margin-top: 30px;
+
+      }
+
+/* SEGUNDA CAJA  COLOR CLARO */
+
+  .caja2{
+  
+    display: grid;
+      grid-template-columns: 100%;
+       grid-template-rows: 405px;
+       background: #ded6bf;
+       width: 100%;  
+       align-items: center;
+       justify-items: center;
+
+    }
+    .textcaja2{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+    }
+   .textcaja2 h2{
+    font-size: 28px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #d2393c;
+    text-align: center;
+  }
+
+  .textcaja2 p{
+        font-size: 16px;
+        font-family: "Open Sans";
+        color:#d2393c;
+        text-align: center;
+        max-width: 450px;
+        margin-top: 30px;
+
+      }
+
+
+
+      /*PARTE DE LAS FRESAS O DESAYUNO */
+
+      .desayuno {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-template-columns: 100%;
+            grid-template-rows:560px;
+            background-image: url(../img/Fondo2.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .desayuno h1{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 44px;
+        line-height: 1.3;
+        color: rgb(245, 240, 237);
+        font-weight: 800;
+        text-align: center;
+    }
+    .desayuno hr{
+        width: 15%;
+        height: 2px;
+        background-color:rgb(245, 240, 237);
+        border-color:rgb(245, 240, 237);
+        margin-top: 30px;
+    }
+    .desayuno p{
+            font-size: 16px;
+            font-family: "Open Sans";
+            color: rgb(245, 240, 237);
+            line-height: 1.2;
+            text-align: center;
+            width: 510px;
+            margin-top: 30px;
+    }
+    /* EZZZZZ */ 
+
+    /* AHORA SI -- PARTE DE 2 X 2 */
+    
+
+/*CUADRO 1*/
+
+.panRecienHecho{
+display: grid;
+background-color:#f5f0ed;
+grid-template-columns: 50% 1fr;
+grid-template-rows: 300px;
+padding-top: 30px;
+
+}
+
+.panRecienHechoText {
+justify-self: center;
+align-self: center;
+width: 95%;
+}
+
+.panRecienHecho h2{
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: rgb(60, 60, 59);
+    line-height: 1.2;
+    text-align: left;
+    width: 100%;
+    
+}
+.panRecienHecho p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;   
+    width: 100%;
+}
+.icono1{
+background-image: url(../img/Icono1.png);
+background-repeat: no-repeat;
+width: 100%;
+background-position: center;
+background-size:173px 173px;
+}
+
+
+
+
+
+/*CUADRO 2*/
+
+.tartasParaCadaDia{
+    display: grid;
+    background-color:#f5f0ed;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 300px;
+    padding-top: 30px;
+    }
+
+    .tartasParaCadaDiaText{
+        justify-self: center;
+        align-self: center;
+        width: 95%;
+
+    }
+    .tartasParaCadaDia h2{
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: rgb(60, 60, 59);
+        line-height: 1.2;
+        text-align: left;
+        width: 100%;
+
+    }
+    .tartasParaCadaDia p{
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+    }
+    .icono2{
+        background-image: url(../img/Icono2.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        background-size:173px 173px;
+    }
+
+/*CUADRO 3*/
+
+.pruebaNuestrosDulces{
+    display: grid;
+    background-color:#f5f0ed;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 300px;
+    padding-top: 30px;
+    }
+
+    .pruebaNuestrosDulcesText{
+        justify-self: center;
+        align-self: center;
+        width: 95%;
+    }
+    .pruebaNuestrosDulces h2{
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: rgb(60, 60, 59);
+        line-height: 1.2;
+        text-align: left;
+        width: 100%;
+    }
+    .pruebaNuestrosDulces p{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    }
+    .icono3{
+        background-image: url(../img/Icono3.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        background-size:173px 173px;
+    }
+
+    /*CUADRO 4*/
+
+.ingredientesEcologicos{
+   display: grid;
+    background-color:#f5f0ed;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 300px;
+    padding-top: 30px;
+    }
+
+    .ingredientesEcologicosText{
+        justify-self: center;
+        align-self: center;
+        width: 95%;
+    }
+    .ingredientesEcologicos h2{
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: rgb(60, 60, 59);
+        line-height: 1.2;
+        text-align: left;
+        width: 100%;
+    }
+    .ingredientesEcologicos p{
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+    }
+    .icono4{
+      background-image: url(../img/Icono4.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        background-size:173px 173px;
+    }
+
+    /* SEGUNDAS CAJITAS */
+
+    
+/* PRIMERA CAJA COLOR ROJO */
+   .cajita1{
+       display: grid;
+       height: 450px;
+       grid-template-columns: 100%;
+
+       max-width: 100%;
+       background:rgb(222, 214, 191);
+       
+     align-items: center;
+     justify-items: center;
+        }
+
+   .textcajita1 h2{
+    font-size: 28px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #d2393c;
+    text-align: center;
+  }
+  .textcajita1 p{
+        font-size: 16px;
+        font-family: "Open Sans";
+        color:  #d2393c;
+        text-align: center;
+        max-width: 450px;
+        margin-top: 30px;
+
+      }
+
+/* SEGUNDA CAJA  COLOR CLARO */
+
+  .cajita2{
+       display: grid;
+       height: 450px;
+       grid-template-columns: 100%;
+       max-width: 100%;
+       background:  #d2393c;
+       align-items: center;
+       justify-items: center;
+    }
+
+   .textcajita2 h2{
+    font-size: 28px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: rgb(222, 214, 191);
+    text-align: center;
+  }
+
+  .textcajita2 p{
+        font-size: 16px;
+        font-family: "Open Sans";
+        color:rgb(222, 214, 191);
+        text-align: center;
+        width: 417px;
+        height: 58px;
+        margin-top: 30px;
+  
+          }
+          
+     
+      .pie{
+display: grid;
+grid-column-start: 1;
+grid-column-end: 3;
+background: #251d1b;
+width: 100%;
+height: 100px;
+display: grid;
+justify-items: center;
+align-items:center ;
+ }
+
+ .pie h4{
+   
+        font-size: 16px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-style: italic;
+        color: rgb(245, 240, 237);
+        line-height: 2.688;
+        text-align: left;
+        
+      }
+      
+
+/* A LOS 667PX CAJAS CUBREN TODO EL ESPACIO Y CRECEN LAS LETRAS */
+      @media screen and (max-width:667px){
+
+        .caja1 , .caja2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .textcaja1 h2 , .textcaja2 h2{
+            font-size: 50px;
+        }
+        .textcaja1 p , .textcaja2 p{
+            font-size: 25px;
+        }
+        
+        }
+
+
+@media screen and (max-width: 444px){
+.h1textos{
+    font-size: 25px;
+}
+.textos p {
+    font-size: 12px;
+    width: 95%;
+}
+
+
+
+}
+       
+
+
+    @media screen and (max-width:590px){
+    
+        .textcaja1 h2 , .textcaja2 h2{
+            font-size: 25px;
+        }
+        .textcaja1 p , .textcaja2 p{
+            font-size: 14px;
+        }
+    }
+
+
+    @media screen and (max-width:508px){
+    
+        .desayuno h1{
+         width: 95%;
+         font-size: 28px;
+            text-align: center;
+        }
+        .desayuno p{
+            width: 95%;
+            font-size: 16px;
+               text-align: center;
+           }
+       
+    }
+
+    
+/* A LOS 1017PX LAS 2 X 2 AHORA CUBREN TODO */
+        @media screen and (max-width:1017px){
+            .panRecienHecho {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                
+            }
+            .tartasParaCadaDia {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                
+            }
+            .pruebaNuestrosDulces {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                
+            }
+            .ingredientesEcologicos {
+                grid-column-start: 1;
+                grid-column-end: 3;
+               
+            }
+        
+        }
+
+        /* AHORA A LOS 590 EMPIEZA A CAMBIAR LAS CAJAS 2 X 2  :( */
+
+        @media screen and (max-width:590px){
+            .panRecienHecho {
+              
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 102px 200px;
+            }
+            .panRecienHechoText {
+                justify-self: stretch;
+                align-self: stretch;
+                width: 95%;
+                padding-top: 10px;
+                }
+            .icono1{
+                background-size:100px 100px;
+                }
+                .panRecienHecho h2 , p{
+                text-align: center;     
+                       }
+            .panRecienHecho h2 {
+             font-size: 20px;     
+        }
+        .panRecienHecho p {
+            font-size: 14px;     
+                          }
+                               
+ }
+
+ @media screen and (max-width:590px){
+    .tartasParaCadaDia {
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 102px 200px;
+    }
+    .tartasParaCadaDiaText {
+        justify-self: stretch;
+        align-self: stretch;
+        width: 95%;
+        padding-top: 10px;
+        }
+    .icono2{
+        background-size:100px 100px;
+        }
+        .tartasParaCadaDia h2 , p{
+        text-align: center;     
+               }
+    .tartasParaCadaDia h2 {
+     font-size: 20px;     
+}
+.tartasParaCadaDia p {
+    font-size: 14px;     
+                      }
+                       
+}
+@media screen and (max-width:590px){
+    .pruebaNuestrosDulces {
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 102px 200px;
+    }
+    .pruebaNuestrosDulcesText {
+        justify-self: stretch;
+        align-self: stretch;
+        width: 95%;
+        padding-top: 10px;
+        }
+    .icono3{
+        background-size:100px 100px;
+        }
+        .pruebaNuestrosDulces h2 , p{
+        text-align: center;     
+               }
+    .pruebaNuestrosDulces h2 {
+     font-size: 20px;     
+}
+.pruebaNuestrosDulces p {
+    font-size: 14px;     
+                      }
+                       
+}
+@media screen and (max-width:590px){
+    .ingredientesEcologicos {
+     
+      padding: 0px 0 20px 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 102px 200px;
+    }
+    .ingredientesEcologicosText {
+        justify-self: stretch;
+        align-self: stretch;
+        width: 95%;
+        padding-top: 10px;
+        }
+    .icono4{
+        background-size:100px 100px;
+        }
+        .ingredientesEcologicos h2 , p{
+        text-align: center;     
+               }
+    .ingredientesEcologicos h2 {
+     font-size: 20px;     
+}
+.ingredientesEcologicos p {
+    font-size: 14px;     
+                      }
+                       
+}
+
+@media screen and (max-width:590px){
+    .cajita1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .cajita2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        }
+        .textcajita1{
+            width: 95%;
+        }
+      
+
+
+
+    }
+
+ 
+
+
