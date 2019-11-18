@@ -20,13 +20,13 @@
 
 <div class="toggle">
 
-        <i class="fa fa-bars" aria-hidden="true"></i>
-        <ul>
+        <i class="fa fa-bars" aria-hidden="true" onclick="CambioDeClases()"></i>
+        <ul id="ElementoMenu" class="ListaNormal">
                 <li><a href="#contacto">CONTACTO</a></li>
                 <li><a href="#reservas">RESERVAS</a></li>
                 <li><a href="#ofertas">OFERTAS</a></li>
                 <li><a href="#productos">PRODUCTOS</a></li>
-                <li><a href="#espacio">EL ESPACIO</a></li>
+                <li><a href="#elEspacio">EL ESPACIO</a></li>
                 </ul>
 </div>
        <div class="navegation">
@@ -35,7 +35,7 @@
                 <li><a href="#reservas">RESERVAS</a></li>
                 <li><a href="#ofertas">OFERTAS</a></li>
                 <li><a href="#productos">PRODUCTOS</a></li>
-                <li><a href="#espacio">EL ESPACIO</a></li>
+                <li><a href="#elEspacio">EL ESPACIO</a></li>
                 </ul>
             </div>
 
@@ -54,7 +54,7 @@
     </div>
    
     
-<div class="caja1">
+<div class="caja1" id="elEspacio">
    <div class="textcaja1">
 <h2>VEN AL BROUNCH <br> DE LOS DOMINGOS</h2>
 <P>Sesame snaps icing chocolate bar. I love donut powder sesame snaps. Jelly-o topping caramels. 
@@ -72,7 +72,7 @@
 
 
 
-<div class="desayuno">
+<div class="desayuno" id="productos">
     <div class="textdesayuno">
         <h1 class="h1desayuno">VEN A DESAYUNAR</h1>
 <hr>
@@ -84,7 +84,7 @@
 </div>
 
 
-<div class="panRecienHecho">
+<div class="panRecienHecho" id="ofertas">
 <div class="icono1">
 </div>
 <div class="panRecienHechoText">
@@ -125,7 +125,7 @@
 </div>
 
 
-        <div class="cajita1">
+        <div class="cajita1" id="reservas">
            <div class="textcajita1">
         <h2>CONTACTA CON <br>NOSOTROS</h2>
         <P>Si quieres hacer una reserva, tienes alguna sugerencia o tsimplemente quieres saludar, escríbenos a:
@@ -153,5 +153,6 @@
 </div>
 
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>

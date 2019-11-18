@@ -21,37 +21,60 @@ background-position: center;
 background-size: cover;
 }
 
-.toggle{
+
+.toggle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: right;
     width: 85%;   
     padding-top: 35px;
     text-align: right;
-    font-size: 42px;
     color:#ded6bf;
     z-index: 2;
+    
+   
 }
-
-.toggle ul{
-list-style: none;
-
-}
-.toggle li a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-   display: none;
- }
-
-
-.toggle i {
+.toggle i{  
+    color:#ded6bf;
     width: 60px;
     height: 50px;
     padding-top: 10px;
     text-align: center;
     background-color: #d2393c;
+    font-size: 42px;
     
 }
+
+
+.ListaNormal {
+    background-color: #d2393c;
+    width: 150px;
+    text-align: right;
+    padding-right: 16px;
+    position: relative;
+    height: 0%;
+    overflow: hidden;
+    
+}
+
+.Lista-abierta {
+    height: auto;
+  overflow: visible;
+}
+
+.toggle li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height : 30px;
+      
+ }
+
+
+
 
 .textos {
     
