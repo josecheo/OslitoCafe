@@ -1,5 +1,6 @@
-
-
+html {
+scroll-behavior: smooth;
+}
 .pagina{
     display: grid;
     grid-template-columns: 50% 50%;
